@@ -7,7 +7,7 @@ app.use(express.urlencoded({ extended: true }));
 const apiport = 8080;
 
 
-  app.get('/hillchiper', async (req, res) => {
+  app.get('/hill', async (req, res) => {
   
     try {
      var code=`import java.util.Scanner;
@@ -278,7 +278,7 @@ public class PlayfairCipher {
   }
 });
 
-app.get('/vchiper', async (req, res) => {
+app.get('/vigenere', async (req, res) => {
   
   try {
    var code=`
@@ -402,7 +402,7 @@ scanner.close();
 
 
 
-app.get('/transchiper', async (req, res) => {
+app.get('/rowandcolumn', async (req, res) => {
   
   try {
    var code=`
